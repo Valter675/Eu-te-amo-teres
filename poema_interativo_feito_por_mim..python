@@ -1,0 +1,43 @@
+import time
+
+def revelar_linha(linha):
+    for char in linha:
+        print(char, end='', flush=True)
+        time.sleep(0.05)  # Tempo entre cada caractere
+    print()
+
+def poema_interativo():
+    print("Olá, meu amor! Este é um poema interativo só para você.")
+    time.sleep(2)
+    
+    input("\nAperte 'Enter' para começar...")
+
+    escolha1 = input("\nEscolha uma palavra que te faz pensar em nós: \n1) Amor \n2) Felicidade \n\nDigite o número da sua escolha: ")
+    
+    if escolha1 == '1':
+        revelar_linha("O amor que sinto por você é como um fogo eterno, nunca se apaga...")
+    elif escolha1 == '2':
+        revelar_linha("A felicidade que você me traz é como o brilho do sol em um dia perfeito...")
+
+    input("\nAperte 'Enter' para continuar...")
+
+    escolha2 = input("\nEscolha uma cor que descreve nossos momentos juntos: \n1) Azul \n2) Vermelho \n\nDigite o número da sua escolha: ")
+    
+    if escolha2 == '1':
+        revelar_linha("O azul do céu nos lembra da serenidade que encontramos juntos...")
+    elif escolha2 == '2':
+        revelar_linha("O vermelho das flores simboliza a paixão que arde entre nós...")
+
+    input("\nAperte 'Enter' para continuar...")
+
+    escolha3 = input("\nEscolha um sentimento que define o que você sente agora: \n1) Paz \n2) Alegria \n\nDigite o número da sua escolha: ")
+    
+    if escolha3 == '1':
+        revelar_linha("Estar com você me traz uma paz que transcende tudo...")
+    elif escolha3 == '2':
+        revelar_linha("A alegria que você me dá é o maior presente que poderia ter...")
+
+    print("\n\nObrigado por participar desse momento comigo. Você é o meu mundo, e cada escolha sua só me faz te amar mais!")
+
+# Executa o poema interativo
+poema_interativo()
